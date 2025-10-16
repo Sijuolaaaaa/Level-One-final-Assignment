@@ -561,6 +561,13 @@ h3 {
   nav ul li {
     display: none;
   }
+  .container1 {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+  }
+
 
   nav {
     justify-content: space-between;
@@ -572,10 +579,10 @@ h3 {
     align-items: center;
     margin-left: auto;
     justify-content: space-between;
+    padding: 15px;
   }
 
   nav .whatsapp {
-    width: 26px;
     height: auto;
   }
 
@@ -586,16 +593,13 @@ h3 {
     font-size: 14px;
     font-weight: 500;
   }
-  .end-text .contact {
-    padding-right: 50px;
-  }
 
   nav .contact span {
     display: none;
   }
 
   nav .flag {
-    width: 90px;
+    width: 130px;
     height: 40px;
     border: 2px solid rgb(178, 190, 181);
     border-radius: 20px;
@@ -609,6 +613,10 @@ h3 {
 
   #first_nav {
     height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
   }
 
   .second_nav {

@@ -5,7 +5,7 @@
 }
 nav {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 20px 80px;
@@ -13,9 +13,6 @@ nav {
   cursor: pointer;
 }
 
-#first-nav {
-  background-color: #fff;
-}
 nav ul {
   display: flex;
   gap: 30px;
@@ -33,14 +30,14 @@ nav ul li {
 .end-text {
   display: flex;
   align-items: center;
-  gap: 40px;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 nav .contact {
   font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  padding-right: 50px;
 }
 
 nav .whatsapp {
@@ -63,7 +60,7 @@ nav .flag {
 nav a {
   text-decoration: none;
   color: RGB(29, 161, 242);
-  font-family: "Inter", sans-serif;  
+  font-family: "Inter", sans-serif;
   font-weight: 600;
 }
 
@@ -71,70 +68,113 @@ nav a {
   position: sticky;
   top: 0;
   z-index: 1000;
+  background-color: white;
 }
 
 .container2 {
   background-color: #ece8d9;
   height: 690px;
   position: relative;
+  padding: 30px 110px;
 }
-.container2 .handcard {
-  right: 0px;
-  width: 580px;
-  position: absolute;
-  top: 240px;
+
+.second_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
 }
+
+.nav-image img {
+  width: 130px;
+  height: auto;
+}
+
+.second_nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.second_nav ul li {
+  font-size: 16px;
+  color: RGB(56, 74, 98);
+}
+
+.second_nav .sign {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
 .second_nav #signIn {
   color: RGB(215, 127, 129);
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 16px;
 }
+
 .second_nav #createAcc {
   color: #50759e;
   font-weight: 600;
   font-size: 16px;
 }
-.container2 .second_nav .sign  {
-  display: flex;
-  position: absolute;
-  gap: 30px;
+
+.container2 .cart {
+  width: 35px;
 }
-.nav-image {
-  margin: 170px 0 120px;
-  position: absolute;
-  width: 150px;
-  height: 100px;
-}
-.nav-image img {
+
+.container2 .cart img {
   width: 100%;
   height: auto;
-  padding-top: 30px;
 }
-.container2 .cart {
+
+.container2 form {
+  position: relative;
+  padding: 30px 0;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.container2 label {
+  display: block;
+  color: RGB(56, 74, 98);
+  margin-bottom: 8px;
+}
+
+.container2 input {
+  width: 50%;
+  height: 120px;
+  padding: 0 60px 0 20px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.container2 .lens {
   position: absolute;
-  right: 115px;
-  width: 40px;
-  margin-top: 50px;
+  left: calc(50% - 60px);
+  top: 53%;
+  transform: translateY(-50%);
+  width: 30px;
+  cursor: pointer;
+  z-index: 1000;
 }
-.container2 .cart img {
-  width: 110%;
+
+.container2 .lens img {
+  width: 100%;
+  height: auto;
 }
-.second_nav {
-  padding: 50px 110px;
-}
-.second_nav ul {
+
+.container2 .handcard {
+  right: 0;
+  width: 580px;
   position: absolute;
-  margin-left: 400px;
-}
-.second_nav ul li {
-  margin-top: 50px;
-  font-size: 16px;
-}
-.container2 .sign {
-  position: absolute;
-  right: 300px;
-  margin-top: 50px;
+  top: 240px;
 }
 h1 {
   font-size: 90px;
@@ -146,37 +186,9 @@ h2 {
   font-size: 40px;
   color: #708095;
   font-weight: 500;
-  font-family: "Inter", sans-serif;  
-}
-.head {
-  padding: 0px 110px;
-}
-.container2 form {
-  padding: 30px 110px;
-  margin-top: 20px;
-  font-size: 20px;
   font-family: "Inter", sans-serif;
-  font-weight: 600;  
 }
-.container2 label {
-  display: block;
-  color: RGB(56, 74, 98);
-}
-.container2 input {
-  width: 50%;
-  height: 130px;
-  padding: 20px;
-  margin-top: 10px;
-  font-size: 20px;
-  color: #c0c1c5;
-  position: relative;
-}
-.container2 .lens {
-  position: absolute;
-  width: 33px;
-  margin-top: -75px;
-  margin-left: 740px;
-}
+
 .card1,
 .card2 {
   display: grid;
@@ -213,7 +225,7 @@ h2 {
   font-size: 20px;
   height: 100px;
   margin: 30px 0 20px;
-  font-family: "Inter", sans-serif;  
+  font-family: "Inter", sans-serif;
   font-weight: 600;
 }
 h3 {
@@ -226,7 +238,7 @@ h3 {
 .card2 p {
   color: #708095;
   font-size: 18px;
-  font-family: "Inter", sans-serif;  
+  font-family: "Inter", sans-serif;
   font-weight: 600;
 }
 .card1 strong,
@@ -261,7 +273,7 @@ h3 {
   color: #d77f81;
   font-size: 24px;
   margin-top: 45px;
-  font-family: "Inter", sans-serif;  
+  font-family: "Inter", sans-serif;
   font-weight: 600;
 }
 .container3 {
@@ -287,7 +299,7 @@ h3 {
   text-wrap: wrap;
   width: 55%;
   padding: 15px 0 30px;
-  font-family: "Inter", sans-serif;  
+  font-family: "Inter", sans-serif;
   font-weight: 550;
 }
 .container4 {
@@ -337,7 +349,7 @@ h3 {
   font-size: 20px;
   font-weight: 200;
   color: #3a516c;
-  font-family: "Inter", sans-serif;  
+  font-family: "Inter", sans-serif;
 }
 #sub-container2 div strong {
   color: #384a62;
@@ -375,7 +387,7 @@ h3 {
   padding-top: 30px;
   font-family: "DM Serif Display", serif;
 }
-.sub-container3{
+.sub-container3 {
   display: flex;
   border: 2px solid white;
   padding: 0 20px 20px 0;
@@ -392,13 +404,13 @@ h3 {
 }
 #sub-container3 div {
   font-size: 21px;
-  font-family: "Inter", sans-serif;  
+  font-family: "Inter", sans-serif;
   font-weight: 400;
 }
-.container5 .img-container2 img{
+.container5 .img-container2 img {
   height: 100px;
   width: 89.25px;
-} 
+}
 .container6 {
   background-color: #f7f6f4;
   height: 430px;
@@ -414,7 +426,7 @@ h3 {
 }
 .mini-container6 {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: flex-start;
   width: 100%;
   margin-top: 30px;
@@ -422,21 +434,37 @@ h3 {
 .sub-container4 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
+  align-items: center;
+}
+.sub-container4 #TCrunch {
+  width: 200px;
+}
+.sub-container4 #forbes {
+  width: 120px;
+}
+.sub-container4 #tpoint {
+  width: 120px;
+}
+.sub-container4 #tcabal {
+  width: 150px;
+}
+.sub-container4 #cnn {
+  width: 70px;
 }
 .sub-container4 a {
-  display: inline-block;  
+  display: inline-block;
   text-decoration: none;
   color: #384a62;
   border-bottom: 2px solid #384a62;
   font-size: 20px;
   font-weight: 300;
   margin-top: 10px;
+  text-align: left;
+  align-self: flex-start;
 }
 .container6 .img-container3 {
-  width: 80%;         
-  height: 50px;        
+  width: 70%;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -445,22 +473,23 @@ h3 {
   height: 100%;
   width: 100%;
   object-fit: contain;
+  align-self: flex-start;
 }
 .container7 {
   background-color: #384a62;
-  color: #ECE8D9;
+  color: #ece8d9;
   height: 555px;
   padding: 60px 110px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  font-family: "Inter", sans-serif;  
+  font-family: "Inter", sans-serif;
 }
 .container7 ul li {
   list-style: none;
   padding: 8px 0;
   font-size: 20px;
   font-weight: 400;
-  font-family: "Inter", sans-serif;  
+  font-family: "Inter", sans-serif;
 }
 .container7 ul {
   margin-top: 15px;
@@ -474,14 +503,14 @@ h3 {
 }
 .img-container4 {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
-  width: 220px; 
+  width: 220px;
 }
 .img-container4 img {
   width: 35px;
   height: 35px;
-  object-fit: contain; 
+  object-fit: contain;
 }
 .container7 #payment {
   width: 230px;
@@ -497,7 +526,7 @@ h3 {
   height: 115px;
   background-color: #cbcac8;
   color: #38557b;
-  font-family: "Inter", sans-serif;  
+  font-family: "Inter", sans-serif;
   font-size: 22px;
   position: relative;
 }
@@ -512,7 +541,7 @@ h3 {
   z-index: 100;
   border: none;
   background-color: #f7279e;
-  color: #ECE8D9;
+  color: #ece8d9;
   font-size: 22px;
   padding: 15px;
   height: 55px;
@@ -524,26 +553,25 @@ h3 {
   display: none;
 }
 
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   * {
     overflow-x: hidden;
   }
 
-  nav ul {
+  nav ul li {
     display: none;
   }
 
   nav {
     justify-content: space-between;
-    padding: 15px 30px;
+    padding: 15px 0;
   }
 
   .end-text {
     display: flex;
     align-items: center;
-    gap: 10px;
     margin-left: auto;
+    justify-content: space-between;
   }
 
   nav .whatsapp {
@@ -553,9 +581,8 @@ h3 {
 
   nav .contact {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: flex-start;
-    /* justify-content: center; */
     font-size: 14px;
     font-weight: 500;
   }
@@ -564,7 +591,7 @@ h3 {
   }
 
   nav .contact span {
-    display: none; 
+    display: none;
   }
 
   nav .flag {
@@ -585,49 +612,46 @@ h3 {
   }
 
   .second_nav {
-    padding: 40px 50px;
+    padding: 10px 0px;
   }
 
   .container2 {
     width: 100%;
-    height: 455px;
+    height: auto;
     margin-top: 0px;
+    padding: 20px 30px;
   }
-  .container2 .cart {
-    margin-top: 15px;
-  }
+
   .container2 .handcard {
     display: none;
   }
-  .head {
-    padding: 0px 40px;
+
+  .container2 .lens {
+    left: calc(100% - 60px);
+    width: 25px;
   }
+
   h1 {
     font-size: 40px;
-    margin-top: 10px;
+    margin-top: 0px;
     font-weight: 500;
   }
-  
+
   .second_nav #signIn {
     font-weight: 500;
-    margin-right: 20px;
   }
   .container2 #createAcc {
     display: none;
   }
-  .container2 .second_nav .sign  {
-    right: 120px;
-    margin-top: 15px;
-  }
-  
+
   .nav-image {
-    margin: 130px 0 120px;
+    margin: 10px 0 0;
+    padding-top: 15px;
     width: 140px;
     height: 90px;
   }
-  
+
   .container2 .cart {
-    right: 40px;
     width: 30px;
   }
   h2 {
@@ -636,7 +660,7 @@ h3 {
     padding-top: 25px;
   }
   .container2 form {
-    padding: 20px 40px;
+    padding-top: 20px;
     margin-top: 20px;
     font-size: 16px;
   }
@@ -645,11 +669,11 @@ h3 {
     height: 90px;
     padding: 20px 40px;
     margin-top: 10px;
-    font-size: 16px; 
+    font-size: 16px;
     font-weight: 100;
-    border: none;   
+    border: none;
   }
-  
+
   .card1,
   .card2 {
     display: flex;
@@ -679,7 +703,7 @@ h3 {
   .PP a,
   .PC a {
     font-size: 14px;
-    margin-top: 12px;  
+    margin-top: 12px;
     font-weight: 500;
   }
   .card1-item,
@@ -712,7 +736,8 @@ h3 {
     margin-bottom: 30px;
     margin-top: 15px;
   }
-  .card1 .text h3, .card2 .text2 h3 {
+  .card1 .text h3,
+  .card2 .text2 h3 {
     margin-top: 0;
   }
   .card1 a,
@@ -720,7 +745,7 @@ h3 {
     padding: 10px;
     font-size: 14px;
     height: 80px;
-    margin: 25px 0 0px; 
+    margin: 25px 0 0px;
     font-weight: 500;
   }
   .shop {
@@ -734,7 +759,7 @@ h3 {
     font-size: 17px;
     text-wrap: wrap;
     width: 100%;
-    padding: 15px 0 30px;  
+    padding: 15px 0 30px;
     font-weight: 550;
   }
   #review {
@@ -769,8 +794,8 @@ h3 {
     margin: 15px 0;
   }
   #sub-container2 div {
-      font-size: 15px;
-      font-weight: 200;
+    font-size: 15px;
+    font-weight: 200;
   }
   #sub-container2 #FL {
     padding-bottom: 17px;
@@ -790,23 +815,23 @@ h3 {
     margin-top: 30px;
     padding-top: 30px;
   }
-  .sub-container3{
+  .sub-container3 {
     display: block;
     padding: 0 40px 20px 0;
   }
   .sub-container3 #sub-container3 #SL {
     width: 70%;
   }
-  .container5 .img-container2 img{
+  .container5 .img-container2 img {
     height: 80px;
     width: 70px;
   }
   #sub-container3 div {
-    font-size: 16px;  
+    font-size: 16px;
   }
   .container6 {
     height: auto;
-    padding: 40px; 
+    padding: 40px;
   }
   .container6 .work {
     font-size: 24px;
@@ -827,21 +852,7 @@ h3 {
     width: 100%;
     margin-bottom: 0px;
   }
-  .sub-container4 #TCrunch {
-    width: 200px;
-  }
-  .sub-container4 #forbes {
-    width: 120px;
-  }
-  .sub-container4 #tpoint {
-    width: 120px;
-  }
-  .sub-container4 #tcabal {
-    width: 150px;
-  }
-  .sub-container4 #cnn {
-    width: 70px;
-  }
+
   .sub-container4 a {
     align-self: flex-start;
     font-size: 16px;
@@ -849,11 +860,11 @@ h3 {
     margin-top: 0px;
   }
   .container6 .img-container3 {
-    width: 100%;         
+    width: 100%;
     height: 80px;
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;        
+    justify-content: flex-start;
   }
   .img-container3 img {
     height: 100%;
@@ -862,7 +873,7 @@ h3 {
   }
   .container7 ul li {
     font-size: 14px;
-    font-weight: 600;  
+    font-weight: 600;
   }
   .container7 ul {
     margin-top: 5px;
@@ -882,10 +893,11 @@ h3 {
     align-items: flex-start;
     padding: 20px 40px;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     margin-top: 0;
   }
-  .container7 #payment, #delivery {
+  .container7 #payment,
+  #delivery {
     width: 40%;
   }
   .img-container4 img {
@@ -905,7 +917,7 @@ h3 {
     padding-bottom: 70px;
   }
   .footer {
-    height: 90px;  
+    height: 90px;
     font-size: 16px;
   }
   .footer div {
@@ -931,14 +943,14 @@ h3 {
   }
   .message2 {
     border: none;
-    color: #ECE8D9;
+    color: #ece8d9;
     font-size: 20px;
     background-color: #f7279e;
     font-weight: 700;
-  } 
+  }
 }
 
-@media (min-width:701px) and (max-width: 1290px) {
+@media (min-width: 601px) and (max-width: 1100px) {
   * {
     overflow-x: hidden;
   }
@@ -979,26 +991,21 @@ h3 {
   }
   .container2 {
     width: 100%;
-    height: 455px;
+    height: 500px;
     margin-top: 0px;
-  }
-  .second_nav {
+    overflow-y: hidden;
     padding: 40px 30px;
   }
-  .second_nav ul {
-    display: none;
-  }
+
   .container2 .handcard {
-    width: 52%;
+    width: 380px;
     height: auto;
-    top: 135px;
+    top: 205px;
   }
-  .head {
-    padding: 0px 30px;
-  }
+
   h1 {
     font-size: 60px;
-    margin-top: 40px;
+    margin-top: 30px;
     font-weight: 600;
     z-index: 100;
   }
@@ -1009,11 +1016,9 @@ h3 {
   .container2 #createAcc {
     display: none;
   }
-  .container2 .second_nav .sign  {
-    right: 90px;
+  .container2 .second_nav .sign {
     margin-top: 10px;
   }
-  
   .container2 .cart {
     right: 30px;
     width: 30px;
@@ -1025,7 +1030,7 @@ h3 {
     padding-top: 5px;
   }
   .container2 form {
-    padding: 20px 30px;
+    padding: 20px 0px;
     margin-top: 20px;
     font-size: 14px;
   }
@@ -1034,12 +1039,14 @@ h3 {
     height: 80px;
     padding: 20px;
     margin-top: 10px;
-    font-size: 16px; 
+    font-size: 16px;
     font-weight: 100;
-    border: none; 
+    border: none;
     z-index: 100;
   }
-  
+  .container2 .lens {
+    left: calc(80% - 50px);
+  }
   .card1,
   .card2 {
     display: grid;
@@ -1070,7 +1077,7 @@ h3 {
   .PP a,
   .PC a {
     font-size: 14px;
-    margin-top: 12px;  
+    margin-top: 12px;
     font-weight: 600;
   }
   .card1-item,
@@ -1103,7 +1110,8 @@ h3 {
     margin-bottom: 30px;
     margin-top: 15px;
   }
-  .card1 .text h3, .card2 .text2 h3 {
+  .card1 .text h3,
+  .card2 .text2 h3 {
     margin-top: 0;
   }
   .card1 a,
@@ -1124,7 +1132,7 @@ h3 {
     font-size: 17px;
     text-wrap: wrap;
     width: 100%;
-    padding: 15px 0 30px;  
+    padding: 15px 0 30px;
     font-weight: 550;
   }
   #review {
@@ -1159,8 +1167,8 @@ h3 {
     margin: 2px 0;
   }
   #sub-container2 div {
-      font-size: 15px;
-      font-weight: 200;
+    font-size: 15px;
+    font-weight: 200;
   }
   #sub-container2 #FL {
     padding-bottom: 17px;
@@ -1181,23 +1189,23 @@ h3 {
     margin-top: 30px;
     padding-top: 30px;
   }
-  .sub-container3{
+  .sub-container3 {
     display: flex;
     margin-bottom: 0;
   }
   .sub-container3 .img-container2 {
     width: 50%;
   }
-  .container5 .img-container2 img{
+  .container5 .img-container2 img {
     height: 80px;
     width: 70px;
   }
   #sub-container3 div {
-    font-size: 14px;  
+    font-size: 14px;
   }
   .container6 {
     height: auto;
-    padding: 40px 30px; 
+    padding: 40px 30px;
   }
   .container6 .work {
     font-size: 24px;
@@ -1239,12 +1247,12 @@ h3 {
     font-weight: 300;
     margin-top: 0px;
   }
-.container6 .img-container3 {
-    width: 100%;         
+  .container6 .img-container3 {
+    width: 100%;
     height: 80px;
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;        
+    justify-content: flex-start;
   }
   .img-container3 img {
     height: 100%;
@@ -1253,7 +1261,7 @@ h3 {
   }
   .container7 ul li {
     font-size: 14px;
-    font-weight: 600;  
+    font-weight: 600;
   }
   .container7 ul {
     margin-top: 5px;
@@ -1273,10 +1281,11 @@ h3 {
     align-items: flex-start;
     padding: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     margin-top: 0;
   }
-  .container7 #payment, #delivery {
+  .container7 #payment,
+  #delivery {
     width: 50%;
   }
   .img-container4 img {
@@ -1297,12 +1306,12 @@ h3 {
     padding-bottom: 70px;
   }
   .footer {
-    height: 90px;  
+    height: 90px;
     font-size: 18px;
   }
   .footer div {
     padding: 28px;
-    font-size: 16px;    
+    font-size: 16px;
   }
   .message {
     display: none;
@@ -1323,12 +1332,80 @@ h3 {
   }
   .message2 {
     border: none;
-    color: #ECE8D9;
+    color: #ece8d9;
     font-size: 20px;
     background-color: #f7279e;
     font-weight: 750;
-  } 
-
+  }
 }
+@media (min-width: 1111px) and (max-width: 1400px) {
+  nav ul li {
+    margin: 0 10px 0 0;
+  }
+  nav .whatsapp {
+    width: 30px;
+    margin-right: 0px;
+  }
 
-
+  .second_nav {
+    justify-content: space-between;
+  }
+  .card1,
+  .card2 {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 0px 110px 20px;
+    margin-top: 0;
+  }
+  #sub-container2 div {
+    font-size: 18px;
+  }
+  .sub-container {
+    max-height: 350px;
+  }
+  .img-container4 img {
+    width: 30px;
+    height: 30px;
+  }
+  .img-container4 {
+    width: 200px;
+  }
+  .container7 {
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+  }
+  .container7 #lastcolumn {
+    margin-top: 15px;
+  }
+  .container6 .img-container3 {
+    width: 70%;
+    height: 50px;
+  }
+  .sub-container3 {
+    height: auto;
+  }
+  .container5 {
+    height: auto;
+  }
+  .container4 {
+    height: auto;
+  }
+  .container4 .sub-container {
+    height: auto;
+  }
+  .container6 {
+    flex-wrap: wrap;
+  }
+  .card1-item,
+  .card2-item {
+    height: 600px;
+  }
+  #review {
+    font-size: 35px;
+  }
+  .container2 .lens {
+    right: calc(55% - 20px);
+    top: 55%;
+    transform: translateY(-55%);
+  }
+}
